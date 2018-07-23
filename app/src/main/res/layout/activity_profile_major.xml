@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile_major">
+
+    <TextView
+        android:id="@+id/select_program_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_program" />
+
+    <Button
+        android:id="@+id/architecture_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_of_architecture"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/engineering_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_of_engineering"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/humanities_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_of_humanities_arts_social_sciences"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/management_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_of_management"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/science_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_of_science"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/informational_technology_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informational_technology"
+        android:textAllCaps="false" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv">
+    </ListView>
+
+
+
+</LinearLayout>

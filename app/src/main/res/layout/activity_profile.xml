@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <ToggleButton
+        android:id="@+id/mentor_ToggleBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/mentor_toggle"
+        android:textOff="@string/Mentor"
+        android:textOn="@string/Mentor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"/>
+
+    <ToggleButton
+        android:id="@+id/mentee_ToggleBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mentor_ToggleBtn"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/class_year_Spinner"
+        android:layout_toRightOf="@+id/mentor_ToggleBtn"
+        android:background="@drawable/mentee_toggle"
+        android:textOff="@string/Mentee"
+        android:textOn="@string/Mentee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mentor_ToggleBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_width="150dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/autoname_TextView"
+        android:layout_width="145dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/auto_first_name_last_name"
+        app:layout_constraintEnd_toStartOf="@+id/gender_Spinner"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentor_ToggleBtn" />
+
+    <Spinner
+        android:id="@+id/gender_Spinner"
+        android:layout_width="150dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentee_ToggleBtn" />
+
+    <TextView
+        android:id="@+id/birthday_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/date_of_birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autoname_TextView" />
+
+    <Spinner
+        android:id="@+id/birthday_month_Spinner"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday_TextView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/birthday_TextView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday_TextView"
+        tools:layout_height="wrap_content" />
+
+
+    <Spinner
+        android:id="@+id/class_year_Spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday_month_Spinner"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/profile_to_main_app_BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_to_profile_major_NextBtn"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/profile_to_profile_major_NextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"/>
+
+
+</android.support.constraint.ConstraintLayout>
